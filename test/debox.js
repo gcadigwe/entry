@@ -1,8 +1,6 @@
 const DeBox = artifacts.require('DeBox');
 
 contract('DeBox', async (accounts) => {
-  let instance;
-
   it('stores files in the smart contract', function () {
     return DeBox.deployed()
       .then(function (instance) {
