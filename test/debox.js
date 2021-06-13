@@ -1,7 +1,5 @@
 const DeBox = artifacts.require('DeBox');
 
-// require('chai').use(require('chai-as-promised')).should();
-
 contract('DeBox', async (accounts) => {
   let instance;
 
@@ -38,20 +36,3 @@ contract('DeBox', async (accounts) => {
       });
   });
 });
-
-// it('creates-images', async()=>{
-//   assert.equal(imageCount,1)
-//   console.log(result.logs[0].args)
-//   const event = result.logs[0].args
-//   assert.equal(event.id.toNumber(),imageCount.toNumber(),"id is correct")
-//   assert.equal(event.hash,hash,"hash is correct")
-//   assert.equal(event.description,"Image description","description is correct")
-//   assert.equal(event.tipAmount,'0','tip amount is correct')
-//   assert.equal(event.author, author,"author is correct")
-
-//   //FAILURE: Image must have hash
-// await decentragram.uploadImage('', 'Image description',{frome:author}).should.be.rejected;
-
-// //FAILURE: Image must have description
-// await decentragram.uploadImage('Image hash', '',{frome:author}).should.be.rejected;
-// })
