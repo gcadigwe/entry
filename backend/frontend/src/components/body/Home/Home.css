@@ -1,0 +1,23 @@
+.Home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: none;
+}
+
+.Home > h1 {
+  font-size: 70px;
+  color: #fff;
+}
+
+.Home__connect {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #111;
+  background-color: #bcd620;
+}

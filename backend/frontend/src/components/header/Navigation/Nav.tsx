@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { Link } from 'react-router-dom';
 import './Nav.css';
 
 const Nav: FC = () => {
@@ -8,9 +9,9 @@ const Nav: FC = () => {
         <h1>De-Box</h1>
       </div>
       <div className="Nav__links">
-        <a href="#" className="home">
+        <Link to="/" className="home">
           Home
-        </a>
+        </Link>
         <a href="#" className="how-it-works">
           How it works
         </a>
