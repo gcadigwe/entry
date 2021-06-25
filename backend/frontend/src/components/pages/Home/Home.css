@@ -4,7 +4,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow: none;
+
+  background-image: url('../../../images/de-box');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Home > h1 {

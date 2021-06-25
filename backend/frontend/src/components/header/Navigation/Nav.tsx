@@ -9,15 +9,15 @@ const Nav: FC = () => {
         <h1>De-Box</h1>
       </div>
       <div className="Nav__links">
-        <Link to="/" className="home">
+        {/* <Link to="/" className="home">
           Home
         </Link>
-        <a href="#" className="how-it-works">
+        <Link to="/how" className="how-it-works">
           How it works
-        </a>
-        <a href="#" className="log-in">
-          Log in
-        </a>
+        </Link> */}
+        <Link to="/login" className="log-in">
+          Login
+        </Link>
       </div>
     </div>
   );
