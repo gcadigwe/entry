@@ -1,10 +1,40 @@
 .Login {
-  background-image: url('../../../images/de-box');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #eee;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.Login__Container {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #111; */
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.Login__Connect {
+  margin: 40px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: #866d87;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Login__Connect:focus {
+  outline: none;
+}
+
+.Login__Connect:hover {
+  background-color: black;
+  color: #fff;
 }

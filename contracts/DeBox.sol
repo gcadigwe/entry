@@ -10,28 +10,26 @@ contract DeBox {
     struct File {
   	uint id;
   	string hash;
-  	string userId;
   	address author;
   }
 
   event FileCreated(
   	uint id,
   	string hash,
-  	string userId,
   	address author
 
   	);
 
-  function uploadFile(string memory _hash, string memory _userId) public {
+  function uploadFile(string memory _hash, address _author) public {
   	require(bytes(_hash).length > 0);
-    require(bytes(_userId).length > 0);
+		require(_author == msg.sender);
   	count++;
   
 
-  	files[count] = File(count,_hash,_userId,msg.sender);
+  	files[count] = File(count,_hash,msg.sender);
 
   	 //emitting event
-  	emit FileCreated(count,_hash,_userId,msg.sender);
+  	emit FileCreated(count,_hash,msg.sender);
 
 
   }

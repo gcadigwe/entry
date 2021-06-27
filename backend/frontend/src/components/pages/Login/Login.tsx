@@ -4,8 +4,10 @@ import './Login.css';
 const Login: FC = () => {
   return (
     <div className="Login">
-      <h1>Connect your wallet to continue</h1>
-      <button>Connect</button>
+      <div className="Login__Container">
+        <h1>Connect your wallet</h1>
+        <button className="Login__Connect">Connect</button>
+      </div>
     </div>
   );
 };

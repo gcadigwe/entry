@@ -1,0 +1,17 @@
+.Dashboard__container {
+  background-color: #eee;
+  display: flex;
+  /* flex-direction: row; */
+  flex-direction: row;
+  flex: 1;
+}
+
+.Dashboard__left {
+  display: flex;
+  flex: 0.3;
+}
+
+.Dashboard__right {
+  display: flex;
+  flex: 0.7;
+}
